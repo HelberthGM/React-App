@@ -2,6 +2,11 @@ import React from 'react';
 import logo from './logo.svg';
 import Componente from './componets/Componente.js';
 import Propiedad from './componets/Propiedades.js';
+import Estado from './componets/Estado'
+import RenderizadoCondicional from './componets/RenderizadoCondicional'
+import RenderizadoElementos from './componets/RenderizadoElementos';
+import {EventosEs6, EventosEs7, MasEventos} from './componets/Eventos';
+import ComunicacionComponentes from './componets/ComunicacionComponentes'
 
 import './App.css';
 
@@ -20,10 +25,10 @@ function App() {
           <img src={logo} className="App-logo" alt="logo" />
           <div>
             <span>{saludo}</span>
-            <br/>
+            <hr/>
             <label htmlFor="name">Nombre: </label>
             <input type="text" id="name"/>
-            <br/>
+            <hr/>
           </div>
           <p>{auth ? "El usuario esta logueado":"El usuario no esta logueado"}</p>
           <p>2 + 1 = {2+1}</p>
@@ -45,7 +50,7 @@ function App() {
 
       <section>
         <Componente msg="Soy un componente :D"/>  
-
+        <hr/>
         <Propiedad 
         cadena="Soy una string" 
         num={10}
@@ -57,6 +62,20 @@ function App() {
         componenteReact={<Componente  msg="Componente agregado desde react"/>}
         compDos={<Componente  msg="Componente dos "/>}
         />
+        <hr/>
+        <Estado/>
+        <hr/>
+        <RenderizadoCondicional/>
+        <hr/>
+        <RenderizadoElementos/>
+        <hr/>
+        <EventosEs6/>
+        <hr/>
+        <EventosEs7/>
+        <hr/>
+        <MasEventos/>
+        <hr/>
+        <ComunicacionComponentes/>
       </section>
       </header>
       
