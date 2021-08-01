@@ -2,11 +2,14 @@ import React from 'react';
 import logo from './logo.svg';
 import Componente from './componets/Componente.js';
 import Propiedad from './componets/Propiedades.js';
-import Estado from './componets/Estado'
+import Estado from './componets/Estado';
 import RenderizadoCondicional from './componets/RenderizadoCondicional'
 import RenderizadoElementos from './componets/RenderizadoElementos';
 import {EventosEs6, EventosEs7, MasEventos} from './componets/Eventos';
-import ComunicacionComponentes from './componets/ComunicacionComponentes'
+import ComunicacionComponentes from './componets/ComunicacionComponentes';
+import CicloVida from "./componets/CicloVida";
+import AjaxApis from "./componets/AjaxApis";
+import ContadorHooks from "./componets/ContadorHooks";
 
 import './App.css';
 
@@ -76,6 +79,12 @@ function App() {
         <MasEventos/>
         <hr/>
         <ComunicacionComponentes/>
+        <hr/>
+        <CicloVida/>
+        <hr/>
+        <AjaxApis/>
+        <hr/>
+        <ContadorHooks/>
       </section>
       </header>
       
